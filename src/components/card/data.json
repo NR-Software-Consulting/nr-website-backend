@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_card_data",
+  "info": {
+    "displayName": "data"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

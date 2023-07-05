@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "seo"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "metaImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "canonicalURL": {
+      "type": "string"
+    }
+  }
+}

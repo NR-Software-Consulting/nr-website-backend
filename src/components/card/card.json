@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_card_cards",
+  "info": {
+    "displayName": "Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "data": {
+      "displayName": "data",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.data"
+    }
+  }
+}

@@ -31,8 +31,8 @@ module.exports = ({ env }) => ({
           pass: "mlnxcoygnvqhqqne",
         },
         settings: {
-          defaultFrom: "Company Needs gsoftconsulting01@gmail.com",
-          defaultReplyTo: "gsoftconsulting01@gmail.com",
+          defaultFrom: "nr-mobiles nrmobiles23@gmail.com",
+          defaultReplyTo: "nrmobiles23@gmail.com",
         },
       },
     },

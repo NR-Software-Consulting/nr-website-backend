@@ -1,5 +1,5 @@
 {
-  "name": "company-needs",
+  "name": "nr-mobiles",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -16,6 +16,7 @@
     "@creazy231/strapi-plugin-apollo-sandbox": "^0.0.11",
     "@strapi/plugin-graphql": "4.11.0",
     "@strapi/plugin-i18n": "4.11.0",
+    "@strapi/plugin-seo": "^1.9.2",
     "@strapi/plugin-users-permissions": "4.11.0",
     "@strapi/provider-email-nodemailer": "^4.11.0",
     "@strapi/strapi": "4.11.0",

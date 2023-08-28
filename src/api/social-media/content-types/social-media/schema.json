@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_medias",
+  "info": {
+    "singularName": "social-media",
+    "pluralName": "social-medias",
+    "displayName": "social-media",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "facebookUrl": {
+      "type": "text"
+    },
+    "instagramUrl": {
+      "type": "text"
+    },
+    "twitterUrl": {
+      "type": "text"
+    },
+    "linkedInUrl": {
+      "type": "text"
+    },
+    "youtubeUrl": {
+      "type": "text"
+    },
+    "pinterestUrl": {
+      "type": "text"
+    },
+    "whatsappNumber": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_card_products",
+  "info": {
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sku": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "text"
+    },
+    "quantity": {
+      "type": "biginteger"
+    },
+    "imageUrl": {
+      "type": "text"
+    }
+  }
+}

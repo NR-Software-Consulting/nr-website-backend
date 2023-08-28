@@ -1,5 +1,5 @@
 {
-  "name": "nr-website-backend",
+  "name": "company-needs",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,19 +9,34 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {
+    "patch-package": "^7.0.0"
+  },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.11.3",
-    "@strapi/plugin-i18n": "4.11.3",
-    "@strapi/plugin-seo": "^1.9.2",
-    "@strapi/plugin-users-permissions": "4.11.3",
-    "@strapi/strapi": "4.11.3",
-    "better-sqlite3": "8.0.1"
+    "@creazy231/strapi-plugin-apollo-sandbox": "^0.0.11",
+    "@strapi/plugin-graphql": "4.11.0",
+    "@strapi/plugin-i18n": "4.11.0",
+    "@strapi/plugin-users-permissions": "4.11.0",
+    "@strapi/provider-email-nodemailer": "^4.11.0",
+    "@strapi/strapi": "4.11.0",
+    "apollo-server-express": "^3.12.0",
+    "apple-signin-auth": "^1.7.5",
+    "bcrypt": "^5.1.0",
+    "better-sqlite3": "8.0.1",
+    "custom-slug": "^2.1.1",
+    "firebase-admin": "^11.10.1",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "nodemailer": "^6.9.3",
+    "pg": "^8.11.0",
+    "strapi-plugin-slugify": "^2.3.3",
+    "strapi-provider-firebase-storage": "^1.0.3"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "6268e273-2a6f-4588-b66d-5849f502460f"
+    "uuid": "cc308858-57ca-46e0-aae4-03a45c1b6c95"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

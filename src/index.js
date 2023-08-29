@@ -7,19 +7,8 @@ const bcrypt = require("bcrypt");
 const { yup, validateYupSchema } = require("@strapi/utils");
 const { ApolloError } = require("apollo-server-express");
 const axios = require("axios");
-const sendPushNotification = require("./utils/send-notifications");
-const serviceAccount = require("../company-needs-firebase-adminsdk-sealg-901b745741.json"); // Update the path
 
-const { getApps, initializeApp, cert } = require("firebase-admin/app");
 
-if (!getApps.length) {
-  initializeApp(
-    {
-      credential: cert(serviceAccount),
-    },
-    new Date().toDateString().trim()
-  );
-}
 const {
   googleLogin,
   appleLogin,
@@ -567,7 +556,6 @@ email: String
                 //   token: registrationToken,
                 // };
 
-                // sendPushNotification(message);
               } else {
                 console.log("type company");
                 if (

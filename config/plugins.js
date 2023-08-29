@@ -56,18 +56,7 @@ module.exports = ({ env }) => ({
     // keep in mind that graphql playground has to be enabled
     enabled: true,
   },
-  upload: {
-    config: {
-      provider: "strapi-provider-firebase-storage",
-      providerOptions: {
-        serviceAccount: require("./serviceAccount.json"),
-        // Custom bucket name
-        bucket: "company-needs.appspot.com",
-        sortInStorage: true, // true | false
-        debug: false, // true | false
-      },
-    },
-  },
+ 
   seo: {
     enabled: true,
   },

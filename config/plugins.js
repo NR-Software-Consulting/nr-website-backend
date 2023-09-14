@@ -5,21 +5,6 @@ module.exports = ({ env }) => ({
         expiresIn: "7d",
       },
     },
-    // providers: [
-    //   {
-    //     name: "google",
-    //     provider: "google",
-    //     clientId:
-    //       "505358320763-j8ggmdqegb00o9n7s1faikd2q6tjdsa9.apps.googleusercontent.com",
-    //     clientSecret: "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",
-    //     redirectUri: "http://localhost:1337/connect/google/callback", // This should match the authorized redirect URI you set in the Google API project
-    //     callback: "/connect/google/callback",
-    //     authParams: {
-    //       access_type: "online", // or 'offline' if you need to access the user's data even when they are not present
-    //     },
-    //     enabled: true,
-    //   },
-    // ],
   },
   email: {
     config: {
@@ -50,13 +35,24 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  upload: {
+    config: {
+      provider: "strapi-provider-firebase-storage",
+      providerOptions: {
+        serviceAccount: require("./serviceAccount.json"),
+        bucket: "nr-mobiles.appspot.com",
+        sortInStorage: true, // true | false
+        debug: false, // true | false
+      },
+    },
+  },
   "apollo-sandbox": {
     // enables the plugin only in development mode
     // if you also want to use it in production, set this to true
     // keep in mind that graphql playground has to be enabled
     enabled: true,
   },
- 
+
   seo: {
     enabled: true,
   },

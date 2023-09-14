@@ -4,7 +4,7 @@ const sendEmail = async (recipientEmail, subject, name, otp) => {
 
     await emailService.send({
       to: recipientEmail,
-      from: "Company Needs gsoftconsulting01@gmail.com",
+      from: "Company Needs nrmobiles23@gmail.com",
       subject: "One-Time OTP for Company Needs Email Verification",
       text: `${this.sendEmailTemplate(name, otp)}`,
     });

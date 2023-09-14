@@ -1,55 +1,35 @@
-const {
-  sendPushNotification,
-} = require("../../../../utils/send-notifications");
-
 module.exports = {
-  async afterUpdate(event) {
-    try {
-      const { result, params } = event;
-      // Only proceed if the status field has been updated
-      if (params.data.status) {
-        const populatedUser = await strapi.query("api::order.order").findOne({
-          where: { id: result.id },
-          populate: { user: true },
-        });
+  beforeCreate(event) {
+    let { data, where, select, populate } = event.params;
 
-        if (
-          populatedUser &&
-          populatedUser.user &&
-          populatedUser.user.fcmToken
-        ) {
-          const registrationToken = populatedUser.user.fcmToken;
-          populatedUser.status =
-            populatedUser.status.charAt(0).toUpperCase() +
-            populatedUser.status.slice(1);
-          const message = {
-            notification: {
-              title: `Order ${populatedUser.status}`,
-              body: "This is a push notification from Strapi! Order.....................",
-            },
-            data: {
-              OrderId: populatedUser.id.toString(),
-              type: "Order",
-            },
-            token: registrationToken,
-          };
+    data.isTableFull = data.numOfPeople === 4;
+  },
 
-          sendPushNotification(message);
+  afterCreate(event) {
+    const { result, params } = event;
+    console.log("re", result, params);
+    sendEmail(result.id);
 
-          const entry = await strapi.db
-            .query("api::notification.notification")
-            .create({
-              data: {
-                title: message.notification.title,
-                message: message.notification.body,
-                type: message.data.type,
-                orderId: message.data.OrderId,
-              },
-            });
-        }
-      }
-    } catch (err) {
-      console.log(err);
-    }
+    // do something to the result
   },
 };
+
+const sendEmail = async (id) => {
+  try {
+    const emailService = strapi.plugins["email"].services.email;
+
+    await emailService.send({
+      to: "nrmobiles23@gmail.com",
+      from: "Nr mobiles ranasaif378@gmail.com",
+      subject: "new order coming",
+      text: `${this.sendEmailTemplate(id)}`,
+    });
+    console.log("Email sent successfully.");
+  } catch (error) {
+    console.error("Failed to send email:", error?.response);
+  }
+};
+
+exports.sendEmailTemplate = (id) => `
+please check new order comming id=${id}
+`;

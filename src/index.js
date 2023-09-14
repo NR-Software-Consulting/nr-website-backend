@@ -866,7 +866,7 @@ email: String
 
               const otp = generateOTP();
 
-              sendEmail(email, "OTP from Company Needs", user.username, otp);
+              sendEmail(email, "OTP from NR Mobiles", user.username, otp);
 
               await strapi
                 .query("plugin::users-permissions.user")
@@ -894,7 +894,7 @@ email: String
 
               let otp = generateOTP();
 
-              sendEmail(email, "OTP from Company Needs", user.username, otp);
+              sendEmail(email, "OTP from NR Mobiles", user.username, otp);
 
               await strapi
                 .query("plugin::users-permissions.user")

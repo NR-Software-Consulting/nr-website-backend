@@ -53,7 +53,7 @@ const appleLogin = async (ctx) => {
   try {
     const id_token = ctx.id_token;
     const data = await appleSignin.verifyIdToken(id_token, {
-      audience: "com.companyneeds.app", // client id - can also be an array
+      audience: "com.nrmobiles.app", // client id - can also be an array
     });
     const user = await strapi.query("plugin::users-permissions.user").findOne({
       where: { email: data.email },
@@ -97,7 +97,7 @@ const verifyGoogle = async (id_token) => {
 const verifyAppleToken = async (id_token) => {
   try {
     const data = await appleSignin.verifyIdToken(id_token, {
-      audience: "com.companyneeds.app", // client id - can also be an array
+      audience: "com.nrmobiles.app", // client id - can also be an array
     });
     return data?.email_verified == "true";
   } catch (err) {

@@ -31,5 +31,5 @@ const sendEmail = async (id) => {
 };
 
 exports.sendEmailTemplate = (id) => `
-please check new order comming id=${id}
+You got New Order from NR Mobiles Website with Invoice Id=${id}
 `;

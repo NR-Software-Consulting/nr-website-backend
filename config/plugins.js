@@ -12,8 +12,8 @@ module.exports = ({ env }) => ({
       providerOptions: {
         service: "gmail",
         auth: {
-          user: "ranasaif378@gmail.com",
-          pass: "mlnxcoygnvqhqqne",
+          user: "nrmobiles23@gmail.com",
+          pass: "aphhfrfhuzycwdxy",
         },
         settings: {
           defaultFrom: "nr-mobiles nrmobiles23@gmail.com",

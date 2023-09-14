@@ -20,7 +20,7 @@ const sendEmail = async (id) => {
 
     await emailService.send({
       to: "nrmobiles23@gmail.com",
-      from: "Nr mobiles ranasaif378@gmail.com",
+      from: "Nr mobiles nrmobiles23@gmail.com",
       subject: "new order coming",
       text: `${this.sendEmailTemplate(id)}`,
     });

@@ -80,7 +80,7 @@
       "unique": true
     },
     "description": {
-      "type": "text",
+      "type": "richtext",
       "pluginOptions": {
         "i18n": {
           "localized": true

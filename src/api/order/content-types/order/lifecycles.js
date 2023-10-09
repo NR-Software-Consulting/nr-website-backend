@@ -20,8 +20,8 @@ const sendEmail = async (id) => {
 
     await emailService.send({
       to: "nrmobiles23@gmail.com",
-      from: "Nr mobiles nrmobiles23@gmail.com",
-      subject: "new order coming",
+      from: "Nr Mobiles nrmobiles23@gmail.com",
+      subject: "New Order Received",
       text: `${this.sendEmailTemplate(id)}`,
     });
     console.log("Email sent successfully.");
@@ -31,5 +31,5 @@ const sendEmail = async (id) => {
 };
 
 exports.sendEmailTemplate = (id) => `
-You got New Order from NR Mobiles Website with Invoice Id=${id}
+Received New Order from NR Mobiles Website with Invoice Number ${id}
 `;

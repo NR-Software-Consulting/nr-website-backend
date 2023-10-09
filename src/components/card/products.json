@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "sku": {
+    "title": {
       "type": "string"
     },
-    "title": {
+    "sku": {
       "type": "string"
     },
     "description": {

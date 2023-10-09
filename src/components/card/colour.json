@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Colour": {
+    "title": {
       "type": "string"
     }
   }

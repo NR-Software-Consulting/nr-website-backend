@@ -39,6 +39,9 @@
     "discount": {
       "type": "string"
     },
+    "colour": {
+      "type": "string"
+    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",

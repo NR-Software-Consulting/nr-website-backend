@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_card_colours",
+  "info": {
+    "displayName": "Colour",
+    "icon": "paint"
+  },
+  "options": {},
+  "attributes": {
+    "Colour": {
+      "type": "string"
+    }
+  }
+}

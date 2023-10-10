@@ -147,7 +147,7 @@
       "target": "api::size.size",
       "inversedBy": "products"
     },
-    "Colour": {
+    "colour": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {

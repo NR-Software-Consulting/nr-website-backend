@@ -9,7 +9,7 @@
     "title": {
       "type": "string"
     },
-    "Colour": {
+    "colour": {
       "type": "string"
     },
     "sku": {

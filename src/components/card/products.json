@@ -9,6 +9,9 @@
     "title": {
       "type": "string"
     },
+    "Colour": {
+      "type": "string"
+    },
     "sku": {
       "type": "string"
     },

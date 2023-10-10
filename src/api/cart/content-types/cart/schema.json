@@ -28,9 +28,7 @@
       "type": "integer"
     },
     "colour": {
-      "type": "component",
-      "repeatable": false,
-      "component": "card.colour"
+      "type": "string"
     }
   }
 }

@@ -8,7 +8,6 @@ const { yup, validateYupSchema } = require("@strapi/utils");
 const { ApolloError } = require("apollo-server-express");
 const axios = require("axios");
 
-
 const {
   googleLogin,
   appleLogin,
@@ -159,7 +158,8 @@ module.exports = {
         extend input CartInput {
           user: ID,
           product: ID,
-          quantity: Int
+          quantity: Int,
+          colour: String
         },
         type Profile_Image {
           id: String
@@ -369,6 +369,7 @@ email: String
                   product: product.id,
                   quantity: args.data.quantity,
                   publishedAt: Date.now(),
+                  colour: args.data.colour,
                 },
               });
 
@@ -555,7 +556,6 @@ email: String
                 //   },
                 //   token: registrationToken,
                 // };
-
               } else {
                 console.log("type company");
                 if (

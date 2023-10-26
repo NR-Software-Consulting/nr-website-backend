@@ -29,6 +29,9 @@
     },
     "colour": {
       "type": "string"
+    },
+    "modal": {
+      "type": "string"
     }
   }
 }

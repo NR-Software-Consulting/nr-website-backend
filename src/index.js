@@ -160,6 +160,7 @@ module.exports = {
           product: ID,
           quantity: Int,
           colour: String
+          modal: String
         },
         type Profile_Image {
           id: String
@@ -370,6 +371,7 @@ email: String
                   quantity: args.data.quantity,
                   publishedAt: Date.now(),
                   colour: args.data.colour,
+                  modal: args.data.modal,
                 },
               });
 

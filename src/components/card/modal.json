@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_card_modals",
+  "info": {
+    "displayName": "modal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

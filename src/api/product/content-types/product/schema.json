@@ -61,9 +61,7 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -166,6 +164,16 @@
         }
       },
       "component": "card.modal"
+    },
+    "user_review": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "card.reviews"
     }
   }
 }

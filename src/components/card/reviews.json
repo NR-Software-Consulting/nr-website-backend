@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_card_reviews",
+  "info": {
+    "displayName": "reviews"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "text"
+    }
+  }
+}

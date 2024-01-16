@@ -57,12 +57,9 @@
       "type": "enumeration",
       "enum": [
         "pending",
-        "approved",
         "processing",
         "canceled",
-        "delivered",
-        "completed",
-        "Tracking"
+        "delivered"
       ]
     }
   }

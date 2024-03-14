@@ -55,12 +55,10 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": [
-        "pending",
-        "processing",
-        "canceled",
-        "delivered"
-      ]
+      "enum": ["pending", "processing", "canceled", "delivered"]
+    },
+    "trackingid": {
+      "type": "string"
     }
   }
 }
